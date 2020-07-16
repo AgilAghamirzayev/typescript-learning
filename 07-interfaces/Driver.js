@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var CricketCoach_1 = require("./CricketCoach");
+var GolfCoach_1 = require("./GolfCoach");
+var myCricketCoach = new CricketCoach_1.CricketCoach();
+var myGolfCoach = new GolfCoach_1.GolfCoach();
+var theCoachs = [];
+theCoachs.push(myGolfCoach);
+theCoachs.push(myCricketCoach);
+theCoachs.forEach(function (coach) { return console.log(coach.getDailyWorkout()); });
